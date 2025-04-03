@@ -1,0 +1,167 @@
+/* Blood Bank Color Scheme */
+:root {
+    --primary-red: #c62828;
+    --secondary-red: #e53935;
+    --light-red: #ffcdd2;
+    --dark-red: #8e0000;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-red);
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--dark-red);
+  }
+  
+  .btn-danger {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+  }
+  
+  .btn-danger:hover {
+    background-color: var(--dark-red);
+    border-color: var(--dark-red);
+  }
+  
+  .btn-outline-danger {
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+  }
+  
+  .text-danger {
+    color: var(--primary-red) !important;
+  }
+  
+  .bg-danger {
+    background-color: var(--primary-red) !important;
+  }
+  
+  .bg-light-red {
+    background-color: var(--light-red);
+  }
+  
+  .bg-dark-red {
+    background-color: var(--dark-red);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--primary-red), var(--secondary-red));
+  }
+  
+  /* Blood Type Cards */
+  .blood-type-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Benefit Icons */
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Step Cards */
+  .step-number {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  /* Testimonial Cards */
+  .testimonial-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Navigation */
+  .navbar {
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Footer */
+  footer a {
+    color: var(--white);
+  }
+  
+  footer a:hover {
+    color: var(--light-red);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .hero-section img {
+      margin-top: 30px;
+    }
+    
+    .top-bar .contact-info,
+    .top-bar .social-links {
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .top-bar .col-md-8,
+    .top-bar .col-md-4 {
+      text-align: center !important;
+    }
+  }
+  
+  /* Blood Drop Animation */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .blood-drop {
+    animation: pulse 2s infinite;
+    color: var(--primary-red);
+  }
